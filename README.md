@@ -17,7 +17,7 @@ Aplikasi E-Voting sederhana yang mendemonstrasikan **4 layanan kriptografi**:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/USERNAME/E-VOTE.git
+git clone https://github.com/cainvsilf/E-VOTE.git
 cd E-VOTE
 ```
 
