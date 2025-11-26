@@ -1,0 +1,28 @@
+# Ignore private keys folder (if exists)
+keys/
+
+# Ignore environment/config files with sensitive data
+config/database.php
+
+# Ignore PHP dependencies
+vendor/
+composer.lock
+
+# Ignore IDE/Editor files
+.idea/
+.vscode/
+*.sublime-*
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore uploaded files
+public/assets/images/candidates/*.jpg
+public/assets/images/candidates/*.png
+!public/assets/images/candidates/.gitkeep

@@ -1,0 +1,291 @@
+/* =====================================================
+   E-VOTE PEMILU - Custom Styles
+   Tema: Pemilu Indonesia (Merah-Putih)
+   ===================================================== */
+
+:root {
+    --primary-red: #dc3545;
+    --dark-red: #c82333;
+    --light-red: #f8d7da;
+}
+
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* Cards */
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Crypto Cards */
+.crypto-card {
+    border-radius: 15px;
+}
+
+.crypto-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+/* Candidate Cards */
+.candidate-card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.candidate-card .card-header {
+    border-radius: 0;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #dc3545, #0d6efd, #198754, #ffc107);
+    border-radius: 3px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.timeline-content h5 {
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #c82333, #a71d2a);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+.btn-lg {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control-lg {
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Progress Bar */
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none; /* Agar tidak menghalangi klik */
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section a,
+.hero-section button {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Voting Selection */
+.candidate-select-card {
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.candidate-select-card:hover {
+    border-color: #dc3545;
+    transform: scale(1.02);
+}
+
+.candidate-select-card.selected {
+    border-color: #198754;
+    background: linear-gradient(135deg, rgba(25, 135, 84, 0.05), rgba(25, 135, 84, 0.1));
+}
+
+/* Code blocks */
+code {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #dc3545;
+    font-size: 0.9em;
+}
+
+/* Badges */
+.badge {
+    padding: 8px 12px;
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .timeline {
+        padding-left: 30px;
+    }
+    
+    .timeline-badge {
+        left: -30px;
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Verification Result */
+.verification-valid {
+    border-left: 5px solid #198754;
+}
+
+.verification-invalid {
+    border-left: 5px solid #dc3545;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc3545;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c82333;
+}
+
+/* Print Styles */
+@media print {
+    .navbar, footer, .btn {
+        display: none;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
