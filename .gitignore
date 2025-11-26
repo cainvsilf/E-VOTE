@@ -1,9 +1,6 @@
 # Ignore private keys folder (if exists)
 keys/
 
-# Ignore environment/config files with sensitive data
-config/database.php
-
 # Ignore PHP dependencies
 vendor/
 composer.lock
